@@ -101,7 +101,7 @@
           <div class="hexagon-container">
             <div class="hexagon-outer">
               <div class="hexagon-inner">
-                <img src="../../21.jpg" alt="Chelfy TABE" class="w-full h-full object-cover" style="object-position: center 12%;"/>
+                <img src="/21.jpg" alt="Chelfy TABE" class="w-full h-full object-cover" style="object-position: center 12%;"/>
               </div>
             </div>
           </div>
@@ -154,8 +154,8 @@ const NavBar = defineAsyncComponent(() => import('./NavBar.vue'));
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
-  transform: scale(1.0);
-  transform-origin: center 22%;
+  object-position: center 15%;
+  transform: scale(1.05);
+  transform-origin: center 15%;
 }
 </style>
