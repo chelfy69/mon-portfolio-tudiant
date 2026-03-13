@@ -1,72 +1,88 @@
 <template>
-  <header class="max-w-full z-20">
-    <nav
-      class="flex border-b-2 border-b-primary2 items-center relative p-3 justify-between md:h-16 h-28 mx-auto md:px-4 container flex-wrap md:flex-nowrap"
-    >
+  <header class="w-full z-50 sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <nav class="max-w-screen-xl mx-auto flex items-center justify-between px-6 md:px-10 h-16">
+
       <!-- Logo -->
-      <div class="text-3xl font-bold flex text-primary">LOGO</div>
-      <!-- Mobile Toggle Button -->
-      <div class="md:hidden z-30">
-        <button
-          class="block focus:outline-none"
-          @click="isMenuOpen = !isMenuOpen"
-        >
-          <span v-if="isMenuOpen" class="text-5xl">
-            <img
-              src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png"
-              alt="delete-sign"
-              width="50"
-              height="50"
-            />
-          </span>
-          <span v-else class="text-5xl">
-            <img
-              src="https://img.icons8.com/ios-filled/100/menu--v6.png"
-              alt="delete-sign"
-              width="50"
-              height="50"
-            />
-          </span>
-        </button>
-      </div>
-      <!-- Responsive Menu -->
-      <div
-        :class="[
-          'fixed inset-0 z-20 flex flex-col items-center justify-center bg-primary md:relative md:bg-transparent md:flex md:justify-between md:flex-row md:space-x-5',
-          isMenuOpen ? 'block' : 'hidden',
-        ]"
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
+          <span class="text-white font-bold text-sm leading-none">CT</span>
+        </div>
+        <span class="font-semibold text-gray-800 text-sm hidden sm:block tracking-tight">Chelfy TABE</span>
+      </a>
+
+      <!-- Desktop menu -->
+      <ul class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-500">
+        <li v-for="item in Menu" :key="item.name">
+          <a
+            :href="item.href"
+            class="hover:text-primary transition-colors duration-200 relative group"
+            @click.prevent="scrollToSection(item.href)"
+          >
+            {{ item.name }}
+            <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- CTA desktop -->
+      <a
+        href="#contact"
+        @click.prevent="scrollToSection('#contact')"
+        class="hidden md:inline-flex items-center gap-2 text-sm font-medium text-primary border border-primary/30 px-4 py-2 rounded-lg hover:bg-primary hover:text-white hover:border-primary transition-all duration-200"
       >
-        <ul
-          class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0 font-medium"
-        >
-          <li v-for="item in Menu" :key="item.name">
-            <a
-              :href="item.href"
-              class="block transition hover:text-primary ease-linear text-2xl md:text-sm lg:text-lg text-white md:text-black"
-              @click="scrollToSection(item.href)"
-            >
-              {{ item.name }}
-            </a>
-          </li>
-        </ul>
-      </div>
+        Me contacter
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-50 transition-colors" @click="isMenuOpen = !isMenuOpen">
+        <svg v-if="!isMenuOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg v-else width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
     </nav>
+
+    <!-- Mobile menu -->
+    <div v-if="isMenuOpen" class="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-1">
+      <a
+        v-for="item in Menu"
+        :key="item.name"
+        :href="item.href"
+        class="block py-2.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+        @click.prevent="scrollToSection(item.href)"
+      >
+        {{ item.name }}
+      </a>
+      <a
+        href="#contact"
+        class="block mt-3 text-center py-2.5 text-sm font-medium text-white bg-primary rounded-lg"
+        @click.prevent="scrollToSection('#contact')"
+      >
+        Me contacter
+      </a>
+    </div>
   </header>
 </template>
+
 <script setup>
 import { ref } from "vue";
 const isMenuOpen = ref(false);
-const Menu =ref([
-    {name:'Services',href:'#services'},
-    {name:'Projects',href:'#projects'},
-    {name:'Contact',href:'#contact'}
+const Menu = ref([
+  { name: 'Profil',       href: '#profil' },
+  { name: 'Formation',    href: '#formation' },
+  { name: 'Expériences',  href: '#experiences' },
+  { name: 'Compétences',  href: '#competences' },
+  { name: 'Projets',      href: '#projects' },
+  { name: 'Contact',      href: '#contact' },
 ]);
 
-const scrollToSection =(href) =>{
-    isMenuOpen.value=false;//Close menu on mobile after clicking a link
-    const section = document.querySelector(herf);
-    if(section){
-        section.scrollIntoView({ behavior : 'smooth'})
-    }
-}
+const scrollToSection = (href) => {
+  isMenuOpen.value = false;
+  const section = document.querySelector(href);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
