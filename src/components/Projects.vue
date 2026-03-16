@@ -30,17 +30,33 @@
               <div class="ml-3 flex-1 bg-white rounded px-3 py-1 text-xs text-gray-400 truncate border border-gray-200">
                 {{ project.context }}
               </div>
+              <!-- GitHub -->
               <a
                 v-if="project.gitURL"
                 :href="project.gitURL"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="ml-2 flex items-center gap-1 text-xs text-gray-400 hover:text-primary transition-colors flex-shrink-0"
+                title="GitHub"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                 </svg>
-                Code
+                GitHub
+              </a>
+              <!-- GitLab -->
+              <a
+                v-if="project.gitlabURL"
+                :href="project.gitlabURL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-1.5 flex items-center gap-1 text-xs text-gray-400 hover:text-orange-500 transition-colors flex-shrink-0"
+                title="GitLab"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+                </svg>
+                GitLab
               </a>
             </div>
             <div class="screenshot-wrapper relative">
@@ -199,14 +215,15 @@ const projects = ref([
   },
   {
     id: 7,
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    title: 'Pipeline Data & Dashboard Analytique',
-    category: 'Projet Data Science',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+    title: 'Health Data Analytics Pipeline',
+    category: 'Data Science · Santé',
     year: '2026',
-    context: 'Analyse de données · Python · Pandas · Scikit-learn',
-    description: 'Pipeline complet de traitement de données : exploration, nettoyage, transformation et visualisation interactive des indicateurs. Analyse exploratoire approfondie (EDA), modélisation statistique et comparaison de modèles de régression/classification. Focus sur la qualité du code, la reproductibilité et la lisibilité des résultats via un dashboard dynamique.',
-    stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Jupyter Notebook'],
-    gitURL: '',
+    context: 'health-data-pipeline · Python · Streamlit · Scikit-learn',
+    description: 'Pipeline complet d\'analyse de données de santé (UCI Diabetes, 442 patients). EDA approfondie, heatmap de corrélation, 6 modèles ML comparés (Random Forest, Gradient Boosting, Ridge…) avec validation croisée. Dashboard Streamlit 4 pages avec simulateur de prédiction en temps réel et niveau de risque.',
+    stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Plotly', 'Streamlit', 'Jupyter Notebook'],
+    gitURL: 'https://github.com/chelfy69/health-data-pipeline',
+    gitlabURL: 'https://gitlab.com/chelfy69/health-data-pipeline',
     liveURL: '',
   },
   {
