@@ -222,7 +222,7 @@ const projects = ref([
     context: 'health-data-pipeline · Python · Streamlit · Scikit-learn',
     description: 'Pipeline complet d\'analyse de données de santé (UCI Diabetes, 442 patients). EDA approfondie, heatmap de corrélation, 6 modèles ML comparés (Random Forest, Gradient Boosting, Ridge…) avec validation croisée. Dashboard Streamlit 4 pages avec simulateur de prédiction en temps réel et niveau de risque.',
     stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Plotly', 'Streamlit', 'Jupyter Notebook'],
-    gitURL: 'https://github.com/chelfy69/health-data-pipeline',
+    gitURL: 'https://github.com/chelfy69/-health-data-pipeline',
     gitlabURL: 'https://gitlab.com/chelfy69/health-data-pipeline',
     liveURL: '',
   },
