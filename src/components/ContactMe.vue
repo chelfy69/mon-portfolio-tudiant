@@ -6,10 +6,10 @@
       <div class="mb-16 text-center" data-aos="fade-up">
         <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Contact</p>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-          Échangeons
+          Parlons de votre alternance
         </h2>
         <p class="text-gray-500 text-sm mt-3 max-w-md mx-auto">
-          Disponible pour tout échange académique, opportunité de stage ou collaboration technique.
+          Je cherche une alternance à partir de septembre 2026, partout en France. Si mon profil vous intéresse, écrivez-moi : je réponds vite.
         </p>
       </div>
 
@@ -67,8 +67,15 @@ const contactInfo = ref([
   {
     id: 1,
     label: 'Adresse e-mail',
-    value: 'chelfytabe69@mail.com',
-    href: 'mailto:chelfytabe69@mail.com',
+    value: 'chelfytabe69@gmail.com',
+    href: 'mailto:chelfytabe69@gmail.com',
+    icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
+  },
+  {
+    id: 4,
+    label: 'Adresse e-mail (secondaire)',
+    value: 'chelfytabe@icloud.com',
+    href: 'mailto:chelfytabe@icloud.com',
     icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
   },
   {
@@ -81,7 +88,7 @@ const contactInfo = ref([
   {
     id: 3,
     label: 'Localisation',
-    value: 'Montbéliard, France',
+    value: 'Montbéliard, mobile partout en France',
     href: null,
     icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
   },

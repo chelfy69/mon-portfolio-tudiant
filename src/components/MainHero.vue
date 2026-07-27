@@ -9,7 +9,7 @@
         <div class="flex justify-center lg:justify-start">
           <span class="inline-flex items-center gap-2 text-xs font-medium text-primary bg-primary/8 border border-primary/20 px-3.5 py-1.5 rounded-full">
             <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-            Étudiant ambitieux · Développement & Ingénierie Logicielle
+            En recherche d'alternance · Rentrée septembre 2026
           </span>
         </div>
 
@@ -19,14 +19,15 @@
           <h1 class="font-bold text-4xl md:text-5xl text-gray-900 leading-tight tracking-tight">
             Chelfy TABE
           </h1>
-          <p class="text-primary font-medium text-lg mt-2">Développeur Full-Stack</p>
+          <p class="text-primary font-medium text-lg mt-2">Développeur Full-Stack &amp; Produit Web</p>
         </div>
 
         <!-- Bio courte -->
         <p class="text-gray-500 text-[15px] leading-relaxed max-w-lg mx-auto lg:mx-0">
-          Étudiant en Licence 3 Informatique à l'Université Marie &amp; Louis Pasteur (Montbéliard),
-          je m'oriente vers l'ingénierie logicielle avec un intérêt marqué pour la conception
-          de systèmes robustes, la structuration du code et l'intégration de briques data/IA.
+          Je viens de terminer ma Licence 3 Informatique à Montbéliard et j'entre en Master 1
+          Produits et Services Multimédia à la rentrée. Je cherche une alternance où je pourrai
+          construire des produits web de bout en bout, de l'interface jusqu'à l'API, avec une
+          équipe qui a de vrais utilisateurs en face. Mobile partout en France.
         </p>
 
         <!-- Actions -->
@@ -42,7 +43,7 @@
           <!-- CV download -->
           <a
             href="/CV_.pdf"
-            download="CV_Chelfy_TABE.pdf"
+            download="CV_Chelfy_TABE_Alternance_2026.pdf"
             class="w-full sm:w-auto flex items-center justify-center gap-3 px-5 py-3 rounded-xl border border-gray-200 bg-white hover:border-primary/40 hover:shadow-md hover:-translate-y-0.5 transition-all group"
           >
             <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -110,7 +111,7 @@
           <div class="relative z-20">
             <div class="flex items-center gap-2 rounded-full border border-primary/20 bg-white py-2.5 px-5 shadow-sm">
               <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0"></span>
-              <span class="text-sm font-medium text-gray-700">L3 Informatique · Montbéliard</span>
+              <span class="text-sm font-medium text-gray-700">M1 PSM · Montbéliard · Dispo rentrée 2026</span>
             </div>
           </div>
 

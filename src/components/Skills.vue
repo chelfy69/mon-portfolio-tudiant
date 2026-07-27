@@ -9,7 +9,7 @@
           Savoir-faire technique
         </h2>
         <p class="text-gray-500 text-sm mt-3 max-w-lg mx-auto">
-          Un ensemble de compétences acquises en formation et consolidées en stage, organisées par domaine.
+          Ce que j'ai appris en cours et surtout ce que j'ai réellement utilisé en stage et sur mes projets. Les technologies mises en avant sont celles que je maîtrise le mieux.
         </p>
       </div>
 
@@ -90,6 +90,8 @@ const skillCategories = ref([
       { name: 'Nuxt.js', primary: true },
       { name: 'Pinia', primary: true },
       { name: 'Tailwind CSS', primary: false },
+      { name: 'Blade', primary: false },
+      { name: 'Alpine.js', primary: false },
       { name: 'React', primary: false },
       { name: 'JavaScript', primary: false },
       { name: 'HTML / CSS', primary: false },
@@ -100,6 +102,7 @@ const skillCategories = ref([
     name: 'Développement Backend & Mobile',
     icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
     skills: [
+      { name: 'Laravel', primary: true },
       { name: 'Node.js', primary: true },
       { name: 'Express.js', primary: false },
       { name: 'Symfony', primary: true },

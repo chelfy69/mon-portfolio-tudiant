@@ -12,8 +12,8 @@
             </div>
             <span class="font-bold text-gray-900 text-base">Chelfy TABE</span>
           </div>
-          <p class="text-gray-400 text-xs">Étudiant en L3 Informatique · Université Marie &amp; Louis Pasteur</p>
-          <p class="text-gray-400 text-xs mt-0.5">Ingénierie Logicielle · Data & IA</p>
+          <p class="text-gray-400 text-xs">Master 1 Produits et Services Multimédia · Université Marie &amp; Louis Pasteur</p>
+          <p class="text-gray-400 text-xs mt-0.5">En recherche d'alternance · Développement web &amp; produit</p>
         </div>
 
         <!-- Navigation rapide -->

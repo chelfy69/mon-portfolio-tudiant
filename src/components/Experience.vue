@@ -6,10 +6,10 @@
       <div class="mb-16 text-center" data-aos="fade-up">
         <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Expériences</p>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-          Stages professionnels
+          En entreprise
         </h2>
         <p class="text-gray-500 text-sm mt-3 max-w-lg mx-auto">
-          Trois expériences en entreprise qui ont structuré ma progression technique et renforcé ma pratique du développement en contexte réel.
+          Quatre stages, du premier passage en équipe frontend à une plateforme d'apprentissage développée dans un laboratoire de recherche. C'est là que j'ai appris à travailler avec d'autres développeurs.
         </p>
       </div>
 
@@ -83,10 +83,24 @@ import { ref } from 'vue';
 const experiences = ref([
   {
     id: 1,
+    role: 'Stagiaire Développeur Full-Stack',
+    company: 'Institut FEMTO-ST, Montbéliard',
+    period: 'Mars à juin 2026',
+    description: 'Mon stage de fin de Licence 3, dans un laboratoire de recherche français. J\'ai développé toute la partie enseignant de TaAlam, une plateforme d\'apprentissage en ligne destinée aux établissements scolaires.',
+    tasks: [
+      'Développement de l\'espace enseignant : création de cours, modules et leçons',
+      'Parcours de création en quatre étapes, avec une validation complète avant publication',
+      'Mise en place des quiz, des devoirs et du suivi de progression des étudiants',
+      'Interfaces construites avec Blade, Tailwind CSS et Alpine.js sur une base Laravel 11',
+    ],
+    stack: ['Laravel 11', 'Blade', 'Tailwind CSS', 'Alpine.js', 'MySQL', 'Git'],
+  },
+  {
+    id: 2,
     role: 'Stagiaire Développeur Web Junior',
     company: 'TechSolution Bénin',
-    period: 'Mars – Juin 2025',
-    description: 'Développement d\'une application de gestion interne en équipe. Prise en main d\'un environnement de production, intégration de maquettes et contribution aux processus qualité.',
+    period: 'Mars à juin 2025',
+    description: 'Développement d\'une application de gestion interne au sein d\'une équipe. Mon premier contact avec un environnement de production, avec tout ce que ça implique : maquettes à intégrer, bugs à corriger et code relu par les autres.',
     tasks: [
       'Développement d\'une application de gestion interne (Node.js, Vue.js, MySQL)',
       'Intégration de maquettes Figma et optimisation de l\'interface utilisateur',
@@ -96,25 +110,25 @@ const experiences = ref([
     stack: ['Vue.js', 'Node.js', 'MySQL', 'Figma', 'Git'],
   },
   {
-    id: 2,
-    role: 'Stagiaire Développeur Full-Stack (Stage académique)',
+    id: 3,
+    role: 'Stagiaire Développeur Full-Stack',
     company: 'SET-IT Bénin',
-    period: 'Avril – Septembre 2023',
-    description: 'Stage de soutenance de licence centré sur la conception et le développement complet du projet ALAFIA LIFE — application mobile de suivi nutritionnel avec reconnaissance d\'images par IA.',
+    period: 'Mars à septembre 2023',
+    description: 'Mon stage de fin de licence au Bénin, sur lequel j\'ai conçu et développé ALAFIA LIFE : une application mobile de suivi nutritionnel qui reconnaît un plat à partir d\'une photo. J\'ai tout porté, de la modélisation au modèle de reconnaissance.',
     tasks: [
       'Conception et développement mobile complet (Flutter / Dart)',
-      'Intégration d\'un pipeline IA côté serveur : photo → API backend → prédiction (TensorFlow / Teachable Machine)',
+      'Mise en place du pipeline côté serveur : la photo part vers l\'API, le modèle la reconnaît et renvoie le résultat (TensorFlow / Teachable Machine)',
       'Contribution à l\'API REST (Laravel) et modélisation UML du système',
       'Estimation calorique et recommandations d\'activité physique',
     ],
     stack: ['Flutter', 'Dart', 'Python', 'TensorFlow', 'Flask', 'Laravel', 'MySQL'],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Stagiaire Développeur Frontend',
     company: 'InnovDev Services',
-    period: 'Juin – Août 2022',
-    description: 'Premier stage professionnel orienté développement frontend, au sein d\'une équipe projet travaillant sur un environnement Symfony.',
+    period: 'Mai à août 2022',
+    description: 'Mon tout premier stage. J\'ai rejoint une équipe qui travaillait sous Symfony et je me suis occupé de la partie frontend du site, en apprenant sur le tas comment un projet avance au quotidien.',
     tasks: [
       'Contribution au développement du site web (HTML, CSS, intégration Symfony)',
       'Rédaction de documentation technique',

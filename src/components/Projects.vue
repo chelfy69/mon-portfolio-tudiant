@@ -9,7 +9,7 @@
           Réalisations &amp; études de cas
         </h2>
         <p class="text-gray-500 text-sm mt-3 max-w-lg mx-auto">
-          Projets académiques et personnels illustrant ma progression, ma démarche et mes choix techniques.
+          Des projets de cours, des projets faits sur mon temps libre et une application publiée sur l'App Store. Le code est consultable quand le dépôt est public.
         </p>
       </div>
 
@@ -142,9 +142,21 @@ import { ref } from 'vue';
 
 const projects = ref([
   {
+    id: 9,
+    image: '/taalam.png',
+    title: 'TaAlam · Plateforme d\'apprentissage en ligne',
+    category: 'Stage FEMTO-ST',
+    year: '2026',
+    context: 'Laravel 11 · Blade · Tailwind CSS · Alpine.js',
+    description: 'Plateforme de cours en ligne pour les établissements scolaires, développée pendant mon stage à l\'Institut FEMTO-ST. J\'ai pris en charge tout l\'espace enseignant : création d\'un cours en quatre étapes, gestion des modules et des leçons, quiz et devoirs, et suivi de la progression des étudiants.',
+    stack: ['Laravel 11', 'Blade', 'Tailwind CSS', 'Alpine.js', 'MySQL', 'Git'],
+    gitURL: '',
+    liveURL: '',
+  },
+  {
     id: 1,
     image: '/luxe.png',
-    title: 'LUXE Collection — E-Commerce Full-Stack',
+    title: 'LUXE Collection · E-commerce full-stack',
     category: 'Projet de cours',
     year: '2026',
     context: 'Programmation Web Avancée · Vue 3 + Node.js',
@@ -156,7 +168,7 @@ const projects = ref([
   {
     id: 2,
     image: '/voyazen.png',
-    title: 'VoyaZen — Application Full-Stack',
+    title: 'VoyaZen · Application full-stack',
     category: 'Projet académique',
     year: '2026',
     context: 'En cours · Vue.js / Symfony',
@@ -168,7 +180,7 @@ const projects = ref([
   {
     id: 3,
     image: '/parent.jpg',
-    title: 'Parents d\'à côté — Application Mobile',
+    title: 'Parents d\'à côté · Application mobile',
     category: 'Produit publié',
     year: '2024',
     context: 'App Store · Flutter / Dart',
@@ -180,11 +192,11 @@ const projects = ref([
   {
     id: 4,
     image: '/life.png',
-    title: 'ALAFIA LIFE — Suivi nutritionnel & IA',
-    category: 'Soutenance · Stage SET-IT',
+    title: 'ALAFIA LIFE · Suivi nutritionnel et IA',
+    category: 'Stage SET-IT',
     year: '2023',
-    context: 'Stage académique 3 mois · Flutter + Python/IA',
-    description: 'Application mobile de suivi nutritionnel avec reconnaissance d\'image par IA : photo d\'un plat → backend Python (TensorFlow / Teachable Machine) → estimation calorique + recommandations sportives.',
+    context: 'Stage de 3 mois · Flutter + Python/IA',
+    description: 'Application mobile de suivi nutritionnel. L\'utilisateur photographie son plat, le serveur Python le reconnaît avec TensorFlow, puis l\'application affiche une estimation des calories et propose une activité physique adaptée.',
     stack: ['Flutter', 'Dart', 'Python', 'TensorFlow', 'Flask', 'Laravel', 'MySQL'],
     gitURL: '',
     liveURL: '',
@@ -220,7 +232,7 @@ const projects = ref([
     category: 'Data Science · Santé',
     year: '2026',
     context: 'health-data-pipeline · Python · Streamlit · Scikit-learn',
-    description: 'Pipeline complet d\'analyse de données de santé (UCI Diabetes, 442 patients). EDA approfondie, heatmap de corrélation, 6 modèles ML comparés (Random Forest, Gradient Boosting, Ridge…) avec validation croisée. Dashboard Streamlit 4 pages avec simulateur de prédiction en temps réel et niveau de risque.',
+    description: 'Analyse complète d\'un jeu de données de santé (UCI Diabetes, 442 patients). Exploration des données, matrice de corrélation, puis comparaison de 6 modèles (Random Forest, Gradient Boosting, Ridge, etc.) avec validation croisée. Le tout présenté dans un tableau de bord Streamlit de 4 pages, avec un simulateur qui prédit le niveau de risque en direct.',
     stack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Plotly', 'Streamlit', 'Jupyter Notebook'],
     gitURL: 'https://github.com/chelfy69/-health-data-pipeline',
     gitlabURL: 'https://gitlab.com/chelfy69/health-data-pipeline',
@@ -229,11 +241,11 @@ const projects = ref([
   {
     id: 8,
     image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80',
-    title: 'Classification de Texte & Analyse de Sentiment (NLP) ( en cours)',
-    category: 'Projet IA / NLP ( encours)',
+    title: 'Classification de texte et analyse de sentiment',
+    category: 'Projet IA / NLP',
     year: '2026',
-    context: 'NLP · Python · TensorFlow · NLTK',
-    description: 'Système NLP de classification automatique et d\'analyse de sentiment sur corpus textuel. Prétraitement linguistique complet (tokenisation, lemmatisation, vectorisation TF-IDF / word embeddings), entraînement et comparaison de modèles (Naive Bayes, SVM, LSTM), évaluation par métriques F1 / précision / rappel, et exposition via API REST Flask.',
+    context: 'En cours · NLP · Python · TensorFlow · NLTK',
+    description: 'Système qui classe automatiquement des textes et détecte le sentiment qui s\'en dégage. Préparation linguistique du corpus (tokenisation, lemmatisation, TF-IDF et word embeddings), puis entraînement et comparaison de plusieurs modèles (Naive Bayes, SVM, LSTM) évalués sur la précision, le rappel et le score F1. Le tout exposé derrière une API Flask.',
     stack: ['Python', 'TensorFlow', 'NLTK', 'Scikit-learn', 'Pandas', 'Flask', 'Jupyter Notebook'],
     gitURL: '',
     liveURL: '',

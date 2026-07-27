@@ -6,16 +6,15 @@
       <div class="max-w-2xl mb-16" data-aos="fade-up">
         <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Profil</p>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5">
-          Parcours &amp; orientation académique
+          Qui je suis
         </h2>
         <p class="text-gray-500 text-[15px] leading-relaxed">
-          Étudiant en Licence 3 Informatique, je m'oriente vers l'ingénierie logicielle
-          avec un intérêt particulier pour la conception de systèmes robustes et maintenables,
-          ainsi que pour les problématiques liées à la donnée et à l'intelligence artificielle.
-          Mon parcours, entre le Bénin et la France, m'a permis de consolider des bases solides
-          en développement full-stack, en modélisation de systèmes (UML, MERISE) et en qualité logicielle.
-          Je souhaite aujourd'hui approfondir l'architecture applicative et l'intégration de briques
-          data/IA dans des produits complets et fiables.
+          J'ai commencé l'informatique au Bénin, dans une école où on m'a appris à analyser un besoin
+          avant d'écrire la première ligne de code : MERISE, UML, cahier des charges. Depuis mon arrivée
+          en France, j'ai surtout fait du web full-stack, avec Vue.js côté interface et Laravel, Node.js
+          ou Symfony côté serveur. Mon dernier stage, à l'Institut FEMTO-ST, m'a fait construire l'espace
+          enseignant d'une plateforme d'apprentissage complète. Ce que j'aime, c'est suivre un produit
+          du début à la fin, de la maquette Figma jusqu'à la mise en ligne, et comprendre à qui il sert vraiment.
         </p>
       </div>
 
@@ -35,22 +34,23 @@
         </div>
       </div>
 
-      <!-- Objectif académique -->
+      <!-- Recherche d'alternance -->
       <div class="mt-14 p-8 rounded-2xl bg-primary/5 border border-primary/15" data-aos="fade-up">
         <div class="flex items-start gap-5">
           <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center flex-shrink-0 mt-0.5">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
             </svg>
           </div>
           <div>
-            <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Objectif académique</p>
+            <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Ce que je cherche</p>
             <p class="text-gray-700 text-sm leading-relaxed font-medium">
-              Poursuivre vers une spécialisation en <strong>Ingénierie Logicielle</strong> afin d'approfondir
-              la conception d'architectures robustes, les méthodes de validation et de qualité,
-              ainsi que les problématiques de performance, scalabilité et maintenabilité.
-              Mon objectif est de concevoir des solutions complètes, fiables et évolutives,
-              intégrant des briques data/IA là où cela est pertinent.
+              Une <strong>alternance en développement web full-stack ou en conception de produit web</strong>,
+              à partir de la rentrée de septembre 2026 et pour toute la durée de mon master.
+              Je suis prêt à m'installer n'importe où en France. Ce qui compte pour moi : rejoindre une équipe
+              où je peux prendre une fonctionnalité en charge du début à la fin, apprendre les habitudes
+              de travail d'une vraie entreprise, et rendre du code qu'un collègue pourra reprendre sans moi.
             </p>
           </div>
         </div>
@@ -66,26 +66,26 @@ const domains = ref([
   {
     id: 1,
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>`,
-    title: 'Architecture Logicielle',
-    description: 'Conception de systèmes modulaires, structuration du code, MERISE et UML, ingénierie des besoins.',
+    title: 'Analyse & conception produit',
+    description: 'Traduire un besoin flou en quelque chose de constructible : MERISE, UML, cahier des charges. Je préfère cadrer avant de coder.',
   },
   {
     id: 2,
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
     title: 'Développement Full-Stack',
-    description: 'Vue.js 3, Nuxt.js, Node.js, Symfony, APIs REST — de l\'architecture au déploiement.',
+    description: 'Vue.js 3, Nuxt.js, Laravel, Node.js, Symfony, APIs REST. Je suis à l\'aise des deux côtés, de la maquette jusqu\'au déploiement.',
   },
   {
     id: 3,
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>`,
-    title: 'Data &amp; Intelligence Artificielle',
-    description: 'Intégration de modèles IA (TensorFlow, PyTorch), pipelines de traitement de données, orchestration de services.',
+    title: 'Data & Intelligence Artificielle',
+    description: 'Brancher un modèle TensorFlow dans une vraie application, nettoyer et exploiter des données avec Python. Deux projets menés là-dessus.',
   },
   {
     id: 4,
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>`,
-    title: 'Qualité &amp; Tests',
-    description: 'Tests unitaires (Vitest), tests E2E (Cypress), structuration du code, bonnes pratiques de développement.',
+    title: 'Qualité & Tests',
+    description: 'Tests unitaires avec Vitest, tests bout en bout avec Cypress, revues de code. Livrer quelque chose qui tient dans la durée.',
   },
 ]);
 </script>
