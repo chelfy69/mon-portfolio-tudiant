@@ -6,7 +6,7 @@
       <div class="mb-16 text-center" data-aos="fade-up">
         <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Contact</p>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-          Parlons de votre alternance
+          Je recherche une alternance
         </h2>
         <p class="text-gray-500 text-sm mt-3 max-w-md mx-auto">
           Je cherche une alternance à partir de septembre 2026, partout en France. Si mon profil vous intéresse, écrivez-moi : je réponds vite.
