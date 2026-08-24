@@ -9,7 +9,7 @@
         <div class="flex justify-center lg:justify-start">
           <span class="inline-flex items-center gap-2 text-xs font-medium text-primary bg-primary/8 border border-primary/20 px-3.5 py-1.5 rounded-full">
             <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-            En recherche d'alternance · Rentrée septembre 2026
+            Disponible en alternance · Rentrée septembre 2026
           </span>
         </div>
 
@@ -20,14 +20,18 @@
             Chelfy TABE
           </h1>
           <p class="text-primary font-medium text-lg mt-2">Développeur Full-Stack &amp; Produit Web</p>
+          <p class="text-gray-600 font-medium text-[15px] mt-1.5">
+            En recherche d'une <strong class="text-gray-900">alternance dès septembre 2026</strong>.
+          </p>
         </div>
 
         <!-- Bio courte -->
         <p class="text-gray-500 text-[15px] leading-relaxed max-w-lg mx-auto lg:mx-0">
-          Je viens de terminer ma Licence 3 Informatique à Montbéliard et j'entre en Master 1
-          Produits et Services Multimédia à la rentrée. Je cherche une alternance où je pourrai
-          construire des produits web de bout en bout, de l'interface jusqu'à l'API, avec une
-          équipe qui a de vrais utilisateurs en face. Mobile partout en France.
+          J'entre en master à la rentrée, après une Licence 3 Informatique et quatre stages —
+          le dernier dans un laboratoire de recherche, où j'ai construit l'espace enseignant
+          d'une plateforme d'apprentissage. Ce que je cherche maintenant : une équipe qui a de
+          vrais utilisateurs en face, et des produits web à construire de bout en bout,
+          de l'interface jusqu'à l'API.
         </p>
 
         <!-- Actions -->
@@ -111,7 +115,7 @@
           <div class="relative z-20">
             <div class="flex items-center gap-2 rounded-full border border-primary/20 bg-white py-2.5 px-5 shadow-sm">
               <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0"></span>
-              <span class="text-sm font-medium text-gray-700">M1 PSM · Montbéliard · Dispo rentrée 2026</span>
+              <span class="text-sm font-medium text-gray-700">Alternance · Mobile partout en France</span>
             </div>
           </div>
 

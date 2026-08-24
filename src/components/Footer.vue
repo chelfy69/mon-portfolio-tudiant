@@ -12,8 +12,8 @@
             </div>
             <span class="font-bold text-gray-900 text-base">Chelfy TABE</span>
           </div>
-          <p class="text-gray-400 text-xs">Master 1 Produits et Services Multimédia · Université Marie &amp; Louis Pasteur</p>
-          <p class="text-gray-400 text-xs mt-0.5">En recherche d'alternance · Développement web &amp; produit</p>
+          <p class="text-primary text-xs font-semibold">En recherche d'alternance · Dès septembre 2026</p>
+          <p class="text-gray-400 text-xs mt-0.5">Étudiant en master · Développement web full-stack &amp; produit</p>
         </div>
 
         <!-- Navigation rapide -->
